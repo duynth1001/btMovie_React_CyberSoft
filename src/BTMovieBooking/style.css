@@ -1,0 +1,57 @@
+.Chair {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #111;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #6dee6d;
+}
+
+
+.Chair.booking {
+    background: red;
+    color: #fff;
+    border: transparent;
+}
+
+.Chair.booked {
+    background: gray;
+    color: #fff;
+    border: transparent;
+    pointer-events: none;
+}
+
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.demo-bg {
+    opacity: 0.6;
+    position: absolute;
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+/* Position text in the middle of the page/image */
+.bg-text {
+    position: relative;
+    width: 100vw;
+    
+}
